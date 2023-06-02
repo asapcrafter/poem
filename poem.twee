@@ -1,0 +1,267 @@
+:: StoryTitle
+poem
+
+
+:: StoryData
+{
+  "ifid": "563DAF7E-B299-4E59-ACB6-4FE2954B2ECB",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "Untitled Passage",
+  "zoom": 1
+}
+
+
+:: \ 1 {"position":"900,500","size":"100,100"}
+For just a moment longer, my love, remain,
+In a sanctuary where our hearts intertwine.
+Like stars that share the same nocturnal plane,
+Alas, in different galaxies they shine.
+
+For just a moment longer, let us dance,
+In the silence that our whispers fill.
+Our smiles born of sweet remembrance,
+Though our eyes betray the chill.
+
+[[Next -> 2]]
+
+
+
+:: \ 2 {"position":"900,625","size":"100,100"}
+For just a moment longer, I'd implore,
+As the sundial sheds its final gleam.
+For with every second, I adore you more,
+In a world where love is but a dream.
+
+For just a moment longer, let's pretend,
+With the hands of time, we may resist.
+For in your arms, reality I suspend,
+And the universe in one kiss, exists.
+
+[[Next -> 3]]
+
+
+:: \ 3 {"position":"900,750","size":"100,100"}
+For just a moment longer, hold me close,
+With a grip that echoes tales of wistful yore.
+Our story written in poetic prose,
+A ballet of love, forevermore.
+
+For just a moment longer, taste the sweet,
+Of love's ambrosia, both pure and grand.
+Yet, on our lips, the rue laden beat,
+Marks time's relentless, uncompromising hand.
+
+[[Next -> 4]]
+
+
+:: \ 4 {"position":"900,875","size":"100,100"}
+For just a moment longer, can't you see,
+Our bittersweet dance on love's old stage?
+The crescendo of a symphony,
+Where passion and pensive sorrow engage.
+
+For just a moment longer, love, don't leave,
+As dawn begins to steal the night away.
+Beneath the moonlight's tender weave,
+In your arms, forever, I wish to stay.
+
+[[Next -> 5]]
+
+
+:: \ 5 {"position":"900,1000","size":"100,100"}
+But alas, our love, is bittersweet,
+A sonnet sung with aching grace.
+And though fate allows our paths to meet,
+In separate worlds, we find our place.
+
+[[Next -> 6]]
+
+
+:: \ 6 {"position":"900,1125","size":"100,100"}
+For just a moment longer, let's be us,
+Two hearts in perfect harmony.
+Despite the future's impending fuss,
+Our love's fleeting memory, will always be.
+
+[[Home -> Everything]]
+
+
+:: \ Everything {"position":"900,1250","size":"100,100"}
+For just a moment longer, my love, remain,
+In a sanctuary where our hearts intertwine.
+Like stars that share the same nocturnal plane,
+Alas, in different galaxies they shine.
+
+For just a moment longer, let us dance,
+In the silence that our whispers fill.
+Our smiles born of sweet remembrance,
+Though our eyes betray the chill.
+
+For just a moment longer, I'd implore,
+As the sundial sheds its final gleam.
+For with every second, I adore you more,
+In a world where love is but a dream.
+
+For just a moment longer, let's pretend,
+With the hands of time, we may resist.
+For in your arms, reality I suspend,
+And the universe in one kiss, exists.
+
+For just a moment longer, hold me close,
+With a grip that echoes tales of wistful yore.
+Our story written in poetic prose,
+A ballet of love, forevermore.
+
+For just a moment longer, taste the sweet,
+Of love's ambrosia, both pure and grand.
+Yet, on our lips, the rue laden beat,
+Marks time's relentless, uncompromising hand.
+
+For just a moment longer, can't you see,
+Our bittersweet dance on love's old stage?
+The crescendo of a symphony,
+Where passion and pensive sorrow engage.
+
+For just a moment longer, love, don't leave,
+As dawn begins to steal the night away.
+Beneath the moonlight's tender weave,
+In your arms, forever, I wish to stay.
+
+But alas, our love, is bittersweet,
+A sonnet sung with aching grace.
+And though fate allows our paths to meet,
+In separate worlds, we find our place.
+
+For just a moment longer, let's be us,
+Two hearts in perfect harmony.
+Despite the future's impending fuss,
+Our love's fleeting memory, will always be.
+
+
+
+:: Untitled Passage {"position":"900,375","size":"100,100"}
+For a final moment longer..
+
+[[Start -> 1]]
+
+
+
+:: StoryStylesheet [stylesheet]
+*/
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+* {
+  font-family: 'Shadows Into Light', cursive; 
+}
+/* These are the default options for the entire browser window */
+tw-story {	
+	background-color: #002b36; 
+	/* Color is the foreground / font color */
+	color: white;
+	/* Make sure the first font listed is one of the fonts you imported above */
+  	font-family: "Shadows Into Light", cursive; 
+  font-style: normal;
+font-stretch: normal;
+	/* This makes the font size for normal letters just a little bit bigger than default */
+	font-size: 1.5em;
+}
+
+/* These are the default options for the each passage area */
+tw-passage {
+	/* 
+		This lets the story take up most of its width up to a maximum readable width 
+		an `em` is about the width of one of your letters.  max-width lets the size
+		get wider and wider with the size of the window but only to a sane point
+		
+		It's ok to experiment with making this smaller or larger
+	*/
+    max-width: 55em;
+	/* This centers the main story column in the window */
+    margin: 0 auto 0 auto;
+}
+
+/* The sidebar with scoring and the back button */
+tw-sidebar { 
+	background: #073642;
+	color: #93a1a1;
+	/* 
+		Gives the sidebar rounded corners.  Remove for no corners or make the number
+		higher for more rounded colors.
+		
+	*/
+	border-radius: 10px;
+
+	/* Uncomment to hide the sidebar completely */
+	/* display: none; */ 
+}
+
+/*
+  BASIC LINK STYLES
+  
+  This covers various different kinds of links in Harlowe
+*/
+.enchantment-link, tw-link, a {
+	color: #cb4b16; 
+	font-weight: bold; 
+	/* Adds a glow to links.  You can make it a seperate color from the text 
+	   The numbers mean, in order: 
+	   - How far to the right of the letter (0 means radiating from the letter)
+	   - How far below the letter
+	   - How much blur does the glow/shadow have
+	   - What color is the shadow
+	*/
+	text-shadow: 0 0 5px #cb4b16;
+}
+/* Links that have already been visited */
+.enchantment-link:visited, tw-link:visited, .enchantment-link.visited, tw-link.visited, a:visited {
+	color: #268bd2; 
+	font-weight: bold; 
+	text-shadow: 0 0 5px #268bd2;
+}
+/* Links when the mouse is over them */
+.enchantment-link:hover, tw-link:hover, a:hover {
+	color: #2aa198; 
+	font-weight: bold; 
+	text-shadow: 0 0 5px #2aa198;
+}
+
+
+/*
+	EFFECTS
+	The pulse-in effect is good for text that will appear based on a user
+	action.  In Twine2, text will just blink into being and the user might
+	not notice.  If you wrap your text in:
+	<span class="pulse-in">Text that gets shown.</span>
+	
+	It will appear with a bright colored pulse that makes it clear it just
+	appeared.
+*/
+@keyframes pulsein {
+  from { color: #00fbf7; text-shadow: 0 0 1em #00fbf7; }
+  to { color: #ADC3D8; text-shadow: 0 0; }
+}
+.pulse-in {
+    color: #ADC3D8;
+    font-size: 1.1em;
+    animation: pulsein 1.2s linear 3;
+}
+span.pulse-in {
+  font-size: inherit;
+}
+
+/* IMAGE STYLES */
+
+/* styles for all images by default */
+img {
+	/* for example */
+	/* border: 1px solid black; */
+}
+/* 
+   images with <img class="full-width"> will stretch 
+   to the full width of the story 
+*/
+img.full-width {
+	display:block; margin-right:auto; margin-left:auto; 
+	width: 100%;
+}
+
